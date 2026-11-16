@@ -1,7 +1,8 @@
 import {useEffect} from 'react';
-import {Check, MessageCircle, X} from 'lucide-react';
+import {Check, X} from 'lucide-react';
 import {buildWhatsAppUrl} from '@/src/config/business';
 import {SafeImage} from '@/src/components/SafeImage';
+import {WhatsAppIcon} from '@/src/components/WhatsAppIcon';
 import type {ProductItem} from '@/src/types';
 
 interface ProductDetailModalProps {
@@ -124,7 +125,7 @@ export function ProductDetailModal({
                 rel="noopener noreferrer"
                 className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-2.5 min-h-[44px] bg-orange-600 hover:bg-orange-700 text-white text-sm font-medium rounded-md transition-colors whitespace-nowrap"
               >
-                <MessageCircle className="w-4 h-4" aria-hidden="true" />
+                <WhatsAppIcon className="w-4 h-4" />
                 <span>Enquire on WhatsApp</span>
               </a>
               <button

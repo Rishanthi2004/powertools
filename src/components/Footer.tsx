@@ -1,6 +1,7 @@
 import {Clock, MapPin, Phone, Wrench} from 'lucide-react';
 import {BUSINESS_CONFIG, buildWhatsAppUrl} from '@/src/config/business';
 import {PRODUCT_CATEGORIES} from '@/src/data/products';
+import {WhatsAppIcon} from '@/src/components/WhatsAppIcon';
 import type {PageId, ProductCategory} from '@/src/types';
 
 interface FooterProps {
@@ -48,9 +49,10 @@ export function Footer({onNavigate, onSelectCategory}: FooterProps) {
                 )}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-orange-400 transition-colors whitespace-nowrap"
+                className="inline-flex items-center gap-1.5 hover:text-emerald-400 transition-colors whitespace-nowrap"
               >
-                WhatsApp
+                <WhatsAppIcon className="w-3.5 h-3.5 text-[#25D366]" />
+                <span>WhatsApp</span>
               </a>
               <span aria-hidden="true" className="text-slate-700">
                 /

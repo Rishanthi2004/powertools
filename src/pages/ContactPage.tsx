@@ -4,11 +4,11 @@ import {
   Clock,
   ExternalLink,
   MapPin,
-  MessageCircle,
   Phone,
   Send,
 } from 'lucide-react';
 import {BUSINESS_CONFIG, buildWhatsAppUrl} from '@/src/config/business';
+import {WhatsAppIcon} from '@/src/components/WhatsAppIcon';
 import type {ContactEnquiryPrefill} from '@/src/types';
 
 interface ContactPageProps {
@@ -181,7 +181,7 @@ export function ContactPage({prefill, onClearPrefill}: ContactPageProps) {
                     rel="noopener noreferrer"
                     className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-2.5 min-h-[44px] bg-orange-600 hover:bg-orange-700 text-white text-sm font-medium rounded-md transition-colors whitespace-nowrap"
                   >
-                    <MessageCircle className="w-4 h-4" aria-hidden="true" />
+                    <WhatsAppIcon className="w-4 h-4" />
                     <span>WhatsApp Enquiry</span>
                   </a>
                   <a
@@ -283,7 +283,7 @@ export function ContactPage({prefill, onClearPrefill}: ContactPageProps) {
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-2 px-5 py-2.5 min-h-[44px] bg-orange-600 hover:bg-orange-700 text-white text-sm font-medium rounded-md transition-colors whitespace-nowrap"
                     >
-                      <MessageCircle className="w-4 h-4" aria-hidden="true" />
+                      <WhatsAppIcon className="w-4 h-4" />
                       <span>Send via WhatsApp</span>
                     </a>
                     <button

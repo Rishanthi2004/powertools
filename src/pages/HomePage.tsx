@@ -1,7 +1,8 @@
-import {ArrowRight, Clock, MapPin, MessageCircle} from 'lucide-react';
+import {ArrowRight, Clock, MapPin} from 'lucide-react';
 import {BUSINESS_CONFIG, buildWhatsAppUrl} from '@/src/config/business';
 import {CATEGORY_SUMMARIES, PRODUCT_CATEGORIES} from '@/src/data/products';
 import {SafeImage} from '@/src/components/SafeImage';
+import {WhatsAppIcon} from '@/src/components/WhatsAppIcon';
 import type {PageId, ProductCategory} from '@/src/types';
 
 interface HomePageProps {
@@ -246,7 +247,7 @@ export function HomePage({onNavigate, onSelectCategory}: HomePageProps) {
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 px-5 py-3 min-h-[46px] bg-orange-600 hover:bg-orange-700 text-white text-sm font-semibold rounded-md transition-colors whitespace-nowrap"
               >
-                <MessageCircle className="w-4 h-4" aria-hidden="true" />
+                <WhatsAppIcon className="w-4 h-4" />
                 <span>Enquire on WhatsApp</span>
               </a>
               <button

@@ -2,6 +2,7 @@ import {useEffect, useState} from 'react';
 import {AnimatePresence, motion} from 'motion/react';
 import {Navbar} from '@/src/components/Navbar';
 import {Footer} from '@/src/components/Footer';
+import {FloatingWhatsAppButton} from '@/src/components/FloatingWhatsAppButton';
 import {HomePage} from '@/src/pages/HomePage';
 import {AboutPage} from '@/src/pages/AboutPage';
 import {ProductsPage} from '@/src/pages/ProductsPage';
@@ -103,6 +104,8 @@ export default function App() {
         onNavigate={navigateTo}
         onSelectCategory={handleSelectCategory}
       />
+
+      <FloatingWhatsAppButton />
     </div>
   );
 }

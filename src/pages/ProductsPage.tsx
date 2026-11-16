@@ -1,9 +1,10 @@
 import {useMemo, useState} from 'react';
-import {MessageCircle, Search, X} from 'lucide-react';
+import {Search, X} from 'lucide-react';
 import {buildWhatsAppUrl} from '@/src/config/business';
 import {PRODUCT_CATEGORIES, PRODUCTS_DATA} from '@/src/data/products';
 import {SafeImage} from '@/src/components/SafeImage';
 import {ProductDetailModal} from '@/src/components/ProductDetailModal';
+import {WhatsAppIcon} from '@/src/components/WhatsAppIcon';
 import type {ProductFilter, ProductItem} from '@/src/types';
 
 interface ProductsPageProps {
@@ -192,7 +193,7 @@ export function ProductsPage({
                         rel="noopener noreferrer"
                         className="flex-1 inline-flex items-center justify-center gap-1.5 px-3.5 py-2.5 min-h-[42px] bg-orange-600 hover:bg-orange-700 text-white text-xs sm:text-sm font-medium rounded-md transition-colors whitespace-nowrap"
                       >
-                        <MessageCircle className="w-4 h-4 shrink-0" aria-hidden="true" />
+                        <WhatsAppIcon className="w-4 h-4 shrink-0" />
                         <span>Enquire on WhatsApp</span>
                       </a>
                     </div>
