@@ -1,0 +1,6 @@
+{
+  "name": "Subasri Power Tools",
+  "description": "Power tools, woodworking machinery, concrete vibrators, and industrial equipment store in Namakkal, Tamil Nadu — established in 2019.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
